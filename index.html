@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Quarta experiência de Realidade aumentada com imagem e o meu marcador</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene vr-mode-ui="enabled: false" embedded arjs="debugUIEnabled: false">
+      <a-marker type="pattern" url="pattern-olho.patt">
+        <a-image src="foto_quixada.png" rotation="-90 0 0" width="1.5" height="1"></a-image>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
+
+<!-- 
+  <!DOCTYPE html>
+<html>
+  <head>
     <title>Terceira experiência de Realidade aumentada com o hiro</title>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
@@ -15,6 +33,7 @@
     </a-scene>
   </body>
 </html>
+-->
 
 <!--
 <!DOCTYPE html>
