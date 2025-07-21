@@ -7,8 +7,11 @@
   </head>
   <body style="margin: 0; overflow: hidden;">
     <a-scene vr-mode-ui="enabled: false" embedded arjs="debugUIEnabled: false">
+      <a-assets>
+        <a-asset-item id="bola" src="teste.glb"></a-asset-item>
+      </a-assets>
       <a-marker type="pattern" url="pattern-olho.patt">
-        <a-image src="foto_quixada.png" rotation="-90 0 0" width="1.5" height="1"></a-image>
+        <a-entity id="bolabola" gltf-model="#bola"></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
