@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Terceira experiência de Realidade aumentada com o hiro</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <video id="videolindo" src="video_francisco.mp4" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline muted style="display: none;"></video>
+    <a-scene vr-mode-ui="enabled: false" embedded arjs="debugUIEnabled: false">
+      <a-marker preset="hiro">
+        <a-video src="#videolindo" position="0 0.5 0" rotation="0 0 0"></a-video>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
+
+<!--
+<!DOCTYPE html>
+<html>
+  <head>
     <title>Segunda experiência de Realidade aumentada com o hiro</title>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
@@ -14,7 +33,7 @@
     </a-scene>
   </body>
 </html>
-
+-->
 <!--
 <!DOCTYPE html>
 <html>
